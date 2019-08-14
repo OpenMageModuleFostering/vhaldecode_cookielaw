@@ -19,7 +19,7 @@
 <config>
     <modules>
         <Valdecode_CookieLaw>
-            <version>1.1.8</version>
+            <version>1.1.9</version>
         </Valdecode_CookieLaw>
     </modules>
     <global>
@@ -49,11 +49,11 @@
         </layout>
         <translate>
             <modules>
-                <translations>
+                <cookielaw>
                     <files>
                         <default>Valdecode_CookieLaw.csv</default>
                     </files>
-                </translations>
+                </cookielaw>
             </modules>
         </translate>
     </frontend>
