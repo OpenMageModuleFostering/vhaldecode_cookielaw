@@ -13,8 +13,8 @@
  * @copyright   Copyright (c) 2014 Valdecode
  * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
  */
-ul.tabs.config-tabs a.v-cookielaw-section span { background: url(../images/icon.png) no-repeat 17px 3px; padding-left: 48px; }
-ul.tabs.config-tabs a.v-cookielaw-section.active span { background: #fff url(../images/icon.png) no-repeat 17px 3px; }
+ul.tabs.config-tabs a.v-cookielaw-section span { background: url(../images/icon.png) no-repeat 187px 3px; }
+ul.tabs.config-tabs a.v-cookielaw-section.active span { background: #fff url(../images/icon.png) no-repeat 187px 3px; }
 
 .content-header h3.v-cookielaw-header { background: url(../images/icon.png) no-repeat; padding-left: 31px; }
 

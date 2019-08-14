@@ -13,7 +13,7 @@
  * @copyright   Copyright (c) 2014 Valdecode
  * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
  */
-#v-cookielaw { overflow: hidden; background: #fff; z-index: 999; }
+#v-cookielaw { overflow: hidden; background: #fff; color: #444; z-index: 9999; }
 #v-cookielaw .v-message { padding: 5px 10px; text-align: left; }
 #v-cookielaw .v-actions { }
 #v-cookielaw .v-button { color: #222; display: inline-block; background-color: #ececec; background-image: linear-gradient(#f4f4f4, #ececec); border: 1px solid #d4d4d4; padding: 4px 10px; text-decoration: none; text-shadow: 1px 1px 0 #fff; border-radius: 2px; }
@@ -36,7 +36,11 @@
 #v-cookielaw.v-box.v-bottom-right { bottom: 0; right: 0; }
 
 /* RWD */
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
+    #v-cookielaw.v-box { display: table; width: 100% !important; padding: 5px 0 0; position: fixed; bottom: 0 !important; top: auto !important; border-top: 1px solid #000; max-width: 100%; margin: 0; border-radius: 0; border-right: 0; border-left: 0; border-bottom: 0; }
+    #v-cookielaw.v-box .v-message { display: table-cell; }
+    #v-cookielaw.v-box .v-actions { display: table-cell; vertical-align: middle; width: 250px; padding-right: 10px; text-align: left; }
+
     #v-cookielaw .v-message { float: left; }
     #v-cookielaw .v-actions { float: left; margin: 5px 10px; }
     #v-cookielaw.v-bar .v-actions { width: auto; }
