@@ -52,7 +52,7 @@
 #v-cookielaw.v-dark-clean .v-button:focus { background-color: #3678a0; background-image: linear-gradient(#68abdc, #387cb3); }
 
 /* Skin - Minimalist */
-#v-cookielaw.v-minimalist { color: #2c2c2c; background: #f0f0f0; border-color: #e0e0e0 !important; font-size: small; }
+#v-cookielaw.v-minimalist { color: #2c2c2c; background: #f0f0f0; border-color: #e0e0e0 !important; font-size: 11px; font-family: Verdana; }
 #v-cookielaw.v-bar.v-minimalist { padding: 2px 0; }
 #v-cookielaw.v-box.v-minimalist { width: 260px; }
 #v-cookielaw.v-box.v-minimalist .v-actions { margin: 5px; }
