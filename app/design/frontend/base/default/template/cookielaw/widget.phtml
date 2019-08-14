@@ -1,22 +1,14 @@
 <?php
 /**
- * Valdecode - Cookie Law Compliance
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the The MIT License (MIT)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * http://www.valdecode.com/license/cookielaw/license.txt
- *
- * @category    Valdecode
- * @package     Valdecode_CookieLaw
- * @copyright   Copyright (c) 2014 Valdecode
- * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
+ * Copyright 2016 The Valdecode Cookie Law Compliance Authors. All rights reserved.
+ * Use of this source code is governed by a MIT-style
+ * license that can be found in the LICENSE.txt file.
  */
 ?>
 <?php $_helper = Mage::helper('cookielaw'); ?>
-<div id="v-cookielaw" class="<?php echo $_helper->getType(); ?> <?php echo $_helper->getSkin(); ?> <?php echo ($_helper->getType() == 'v-bar') ? $_helper->getBarPosition() : $_helper->getBoxPosition(); ?>" style="display: none">
+<div id="v-cookielaw"
+     class="<?php echo $_helper->getType(); ?> <?php echo $_helper->getSkin(); ?> <?php echo ($_helper->getType() == 'v-bar') ? $_helper->getBarPosition() : $_helper->getBoxPosition(); ?>"
+     style="display: none">
     <div class="v-message">
         <?php echo ($_helper->getShow() == 'default') ? $this->__('This websites use cookies. By continuing to browse the site you are agreeing to our use of cookies.') : $_helper->getCustomMessage(); ?>
     </div>
@@ -31,11 +23,10 @@
 </div>
 <script type="text/javascript">
     function cookieLawAccept() {
+        var d = null;
         if (<?php echo $_helper->getBehaviour(); ?>) {
-            var d = new Date();
-            d.setTime(d.getTime()+(<?php echo $_helper->getBehaviour(); ?>*24*60*60*1000));
-        } else {
-            var d = null;
+            d = new Date();
+            d.setTime(d.getTime() + (<?php echo $_helper->getBehaviour(); ?> * 24 * 60 * 60 * 1000));
         }
         Mage.Cookies.set('cookielaw', '1', d);
         document.getElementById('v-cookielaw').style.display = 'none';
@@ -44,7 +35,7 @@
     if (!Mage.Cookies.get('cookielaw')) document.getElementById('v-cookielaw').style.display = '';
 
     <?php if ($_helper->getAutohide()): ?>
-        setTimeout(function() {
+        setTimeout(function () {
             cookieLawAccept();
         }, <?php echo $_helper->getAutohide()*1000; ?>);
     <?php endif; ?>

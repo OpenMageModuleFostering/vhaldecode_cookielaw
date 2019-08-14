@@ -1,19 +1,9 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Valdecode - Cookie Law Compliance
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the The MIT License (MIT)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * http://www.valdecode.com/license/cookielaw/license.txt
- *
- * @category    Valdecode
- * @package     Valdecode_CookieLaw
- * @copyright   Copyright (c) 2014 Valdecode
- * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
+ * Copyright 2016 The Valdecode Cookie Law Compliance Authors. All rights reserved.
+ * Use of this source code is governed by a MIT-style
+ * license that can be found in the LICENSE.txt file.
  */
 -->
 <config>
@@ -65,7 +55,9 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><type>v-bar</type></depends>
+                            <depends>
+                                <type>v-bar</type>
+                            </depends>
                             <source_model>cookielaw/config_bar_position</source_model>
                         </bar_position>
                         <box_position translate="label">
@@ -75,7 +67,9 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><type>v-box</type></depends>
+                            <depends>
+                                <type>v-box</type>
+                            </depends>
                             <source_model>cookielaw/config_box_position</source_model>
                         </box_position>
                         <skin translate="label">
@@ -132,7 +126,9 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><show>custom</show></depends>
+                            <depends>
+                                <show>custom</show>
+                            </depends>
                         </custom_message>
                         <custom_accept translate="label">
                             <label>Accept text</label>
@@ -141,7 +137,9 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><show>custom</show></depends>
+                            <depends>
+                                <show>custom</show>
+                            </depends>
                         </custom_accept>
                         <custom_more_info translate="label">
                             <label>More information text</label>
@@ -150,7 +148,9 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><show>custom</show></depends>
+                            <depends>
+                                <show>custom</show>
+                            </depends>
                         </custom_more_info>
                         <cms_page translate="label">
                             <label>More information page</label>
