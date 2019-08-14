@@ -16,7 +16,7 @@
 #v-cookielaw { overflow: hidden; width: 100%; background: #fff; border-bottom: 1px solid #000; padding: 8px 0; position: relative; }
 #v-cookielaw .v-message { float: left; text-align: left; padding: 0 10px; width: 90%; }
 #v-cookielaw .v-close { right: 10px; position: absolute; top: 50%; margin-top: -8px; cursor: pointer; font-size: 0; width: 16px; height: 16px; background: url('../images/close.png') no-repeat; }
-#v-cookielaw .v-close:hover { background-position: 0 -49px; }
+#v-cookielaw .v-close:hover { background-position: 0 -48px; }
 
 #v-cookielaw.v-top { }
 #v-cookielaw.v-bottom { position: fixed; bottom: 0; z-index: 999999; border-bottom: 0; border-top: 1px solid #000; }
@@ -29,9 +29,9 @@
 #v-cookielaw.v-dark-clean a { color: #ff9393; text-decoration: none; }
 #v-cookielaw.v-dark-clean a:hover { text-decoration: underline; }
 #v-cookielaw.v-dark-clean .v-close { background-position: 0 -32px; }
-#v-cookielaw.v-dark-clean .v-close:hover { background-position: 0 -17px; }
+#v-cookielaw.v-dark-clean .v-close:hover { background-position: 0 -16px; }
 
 @media screen and (max-width: 480px) {
     #v-cookielaw .v-message { float: none; width: 100%; }
-    #v-cookielaw .v-close { padding: 5px 10px; display: inline-block; font-size: inherit; background: none; position: relative; margin-top: inherit; top: inherit; right: inherit; }
+    #v-cookielaw .v-close { padding: 5px 10px; display: inline-block; font-size: inherit; background: none; position: relative; margin-top: inherit; top: inherit; right: inherit; width: 100%; }
 }

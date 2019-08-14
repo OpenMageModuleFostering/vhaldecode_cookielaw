@@ -18,10 +18,17 @@
 <?php if (Mage::getStoreConfig('cookielaw/cookielaw/enabled')): ?>
     <div id="v-cookielaw" class="<?php echo Mage::getStoreConfig('cookielaw/cookielaw/position') ?> <?php echo Mage::getStoreConfig('cookielaw/cookielaw/skin') ?>" style="display: none">
         <div class="v-message">
-            <?php $link = '<a href="'.Mage::getStoreConfig('cookielaw/cookielaw/cms_page').'">'.$this->__("cookie policy").'</a>' ?>
-            <?php echo $this->__('This websites use cookies. By continuing to browse the site you are agreeing to our use of cookies. For more details about cookies and how to manage them, see our %s.', $link) ?>
+            <?php if (Mage::getStoreConfig('cookielaw/cookielaw/show') == 'translate'): ?>
+                <?php $link = '<a href="'.Mage::getStoreConfig('cookielaw/cookielaw/cms_page').'">'.$this->__("cookie policy").'</a>' ?>
+                <?php echo $this->__('This websites use cookies. By continuing to browse the site you are agreeing to our use of cookies. For more details about cookies and how to manage them, see our %s.', $link) ?>
+            <?php else: ?>
+                <?php echo Mage::getStoreConfig('cookielaw/cookielaw/custom_message'); ?>
+                <a href="<?php echo Mage::getStoreConfig('cookielaw/cookielaw/cms_page'); ?>"><?php echo Mage::getStoreConfig('cookielaw/cookielaw/custom_link'); ?></a>
+            <?php endif; ?>
         </div>
-        <a href="javascript:cookieLaw.cookieLawAccept(<?php echo Mage::getStoreConfig('cookielaw/cookielaw/behaviour') ?>);" class="v-close"><?php echo $this->__("Accept") ?></a>
+        <a href="javascript:cookieLaw.cookieLawAccept(<?php echo Mage::getStoreConfig('cookielaw/cookielaw/behaviour') ?>);" class="v-close">
+            <?php echo (Mage::getStoreConfig('cookielaw/cookielaw/show') == 'translate') ? $this->__("Accept") : Mage::getStoreConfig('cookielaw/cookielaw/custom_accept'); ?>
+        </a>
     </div>
     <script type="text/javascript">
         if (!cookieLaw.getCookie('cookielaw')) {

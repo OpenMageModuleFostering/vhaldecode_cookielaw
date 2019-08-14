@@ -80,6 +80,7 @@
                 <behaviour>1</behaviour>
                 <position>v-top</position>
                 <skin>v-yellow-alert</skin>
+                <show>translate</show>
                 <cms_page>privacy-policy-cookie-restriction-mode</cms_page>
             </cookielaw>
         </cookielaw>
