@@ -1,17 +1,17 @@
 /**
- * Valdecode
+ * Valdecode - Cookie Law Compliance
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the Academic Free License (AFL 3.0)
- * that is bundled with this package in the file LICENSE_AFL.txt.
+ * This source file is subject to the The MIT License (MIT)
+ * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/afl-3.0.php
+ * http://www.valdecode.com/license/cookielaw/license.txt
  *
  * @category    Valdecode
  * @package     Valdecode_CookieLaw
  * @copyright   Copyright (c) 2014 Valdecode
- * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
  */
 #v-cookielaw { overflow: hidden; background: #fff; z-index: 999; }
 #v-cookielaw .v-message { padding: 5px 10px; text-align: left; }
@@ -50,3 +50,11 @@
 #v-cookielaw.v-dark-clean .v-button { color: #fff; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); border-color: #3072b3; border-bottom-color: #2a65a0; background-color: #2a65a0; background-image: linear-gradient(#599bdc, #3072b3); }
 #v-cookielaw.v-dark-clean .v-button:hover,
 #v-cookielaw.v-dark-clean .v-button:focus { background-color: #3678a0; background-image: linear-gradient(#68abdc, #387cb3); }
+
+/* Skin - Minimalist */
+#v-cookielaw.v-minimalist { color: #2c2c2c; background: #f0f0f0; border-color: #e0e0e0 !important; font-size: small; }
+#v-cookielaw.v-bar.v-minimalist { padding: 2px 0; }
+#v-cookielaw.v-box.v-minimalist { width: 260px; }
+#v-cookielaw.v-box.v-minimalist .v-actions { margin: 5px; }
+#v-cookielaw.v-box.v-minimalist .v-message { padding: 5px; }
+#v-cookielaw.v-minimalist .v-button { padding: 3px 6px; }

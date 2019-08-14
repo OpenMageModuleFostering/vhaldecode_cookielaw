@@ -16,18 +16,10 @@
  * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
  */
 -->
-<layout version="0.1.0">
-    <default>
+<layout>
+    <adminhtml_system_config_edit>
         <reference name="head">
             <action method="addCss"><stylesheet>valdecode/cookielaw/css/cookielaw.css</stylesheet></action>
         </reference>
-        <reference name="after_body_start">
-            <block name="cookielaw" type="core/template" before="-" template="cookielaw/widget.phtml"
-                   ifconfig="advanced/modules_disable_output/Valdecode_CookieLaw">
-                <action method="setCacheLifetime">
-                    <lifetime>3600</lifetime>
-                </action>
-           </block>
-        </reference>
-    </default>
+    </adminhtml_system_config_edit>
 </layout>

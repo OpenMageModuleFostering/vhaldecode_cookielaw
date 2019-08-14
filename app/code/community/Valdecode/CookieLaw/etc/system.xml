@@ -1,30 +1,27 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Valdecode
+ * Valdecode - Cookie Law Compliance
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the Open Software License (OSL 3.0)
+ * This source file is subject to the The MIT License (MIT)
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
+ * http://www.valdecode.com/license/cookielaw/license.txt
  *
  * @category    Valdecode
  * @package     Valdecode_CookieLaw
- * @copyright   Copyright (c) 2013 Valdecode
- * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @copyright   Copyright (c) 2014 Valdecode
+ * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
  */
 -->
 <config>
     <sections>
         <cookielaw module="cookielaw">
-            <label>
-                <![CDATA[
-                    <img src="/skin/frontend/base/default/valdecode/cookielaw/images/cookie.png" height="13" onerror="this.src='';"  style="vertical-align: text-top" />
-                    Cookie Law Compliance
-                ]]>
-            </label>
+            <label>Cookie Law Compliance</label>
+            <class>v-cookielaw-section</class>
+            <header_css>v-cookielaw-header</header_css>
             <tab>general</tab>
             <sort_order>9000</sort_order>
             <show_in_default>1</show_in_default>
@@ -35,9 +32,10 @@
                     <label>General</label>
                     <comment>
                         <![CDATA[
-                            <div style="border: 1px solid #d6d6d6; padding: 5px; margin-bottom: 5px; background: #fafafa;">
-                            <b>Cookie Law Compliance</b> is a <b>Valdecode</b>
-                            extension.<br/><span style="color: #6f8992;">We would like you to review this extension
+                            <div class="v-cookielaw-notice">
+                            <b><a href="http://www.magentocommerce.com/magento-connect/eu-cookie-law-compliance-3.html" target="_blank">Cookie Law Compliance</a></b>
+                            is a <b><a href="http://www.valdecode.com/" target="_blank">Valdecode</a></b>
+                            extension.<br/><span class="advice">We would like you to review this extension
                             at Magento Connect. If you feel that we do not deserve a 5 star review, please contact us right
                             away before leaving a neutral or negative review, so we can try to correct the problem.</span>
                             </div>
