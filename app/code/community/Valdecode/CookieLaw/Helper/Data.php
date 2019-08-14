@@ -48,7 +48,7 @@ class Valdecode_CookieLaw_Helper_Data extends Mage_Core_Helper_Abstract
 
     public function getCmsPage()
     {
-        return Mage::getStoreConfig('cookielaw/content/cms_page');
+        return Mage::getUrl(Mage::getStoreConfig('cookielaw/content/cms_page'));
     }
 
     public function getShow()
