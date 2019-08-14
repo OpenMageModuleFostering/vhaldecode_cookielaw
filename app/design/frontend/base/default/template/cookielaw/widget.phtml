@@ -31,8 +31,12 @@
 </div>
 <script type="text/javascript">
     function cookieLawAccept() {
-        var d = new Date();
-        if (<?php echo $_helper->getBehaviour(); ?>) d.setTime(d.getTime()+(365*24*60*60*1000)); // Remember 365 days
+        if (<?php echo $_helper->getBehaviour(); ?>) {
+            var d = new Date();
+            d.setTime(d.getTime()+(365*24*60*60*1000)); // Remember 365 days
+        } else {
+            var d = null;
+        }
         Mage.Cookies.set('cookielaw', '1', d);
         document.getElementById('v-cookielaw').style.display = 'none';
     }

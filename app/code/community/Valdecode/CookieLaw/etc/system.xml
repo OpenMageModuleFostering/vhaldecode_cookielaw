@@ -21,7 +21,7 @@
         <cookielaw module="cookielaw">
             <label>
                 <![CDATA[
-                    <img src="/skin/frontend/base/default/valdecode/cookielaw/images/cookie.png" height="13" onerror="this.src='';" />
+                    <img src="/skin/frontend/base/default/valdecode/cookielaw/images/cookie.png" height="13" onerror="this.src='';"  style="vertical-align: text-top" />
                     Cookie Law Compliance
                 ]]>
             </label>
