@@ -13,7 +13,7 @@
  * @copyright   Copyright (c) 2014 Valdecode
  * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
  */
-#v-cookielaw { overflow: hidden; background: #fff; color: #444; z-index: 9999; }
+#v-cookielaw { overflow: hidden; background: #fff; color: #444; z-index: 9999; font-size: 13px; }
 #v-cookielaw .v-message { padding: 5px 10px; text-align: left; }
 #v-cookielaw .v-actions { }
 #v-cookielaw .v-button { color: #222; display: inline-block; background-color: #ececec; background-image: linear-gradient(#f4f4f4, #ececec); border: 1px solid #d4d4d4; padding: 4px 10px; text-decoration: none; text-shadow: 1px 1px 0 #fff; border-radius: 2px; }
@@ -29,7 +29,7 @@
 #v-cookielaw.v-bar.v-bottom { position: fixed; bottom: 0; border-top: 1px solid #000; }
 
 #v-cookielaw.v-box { position: fixed; max-width: 300px; border: 1px solid #000; border-radius: 3px; margin: 10px; }
-#v-cookielaw.v-box .v-actions { float: left; margin: 5px 10px 10px 10px; }
+#v-cookielaw.v-box .v-actions { float: left; margin: 5px 10px; }
 #v-cookielaw.v-box.v-top-left { top: 0; left: 0; }
 #v-cookielaw.v-box.v-top-right { top: 0; right: 0; }
 #v-cookielaw.v-box.v-bottom-left { bottom: 0; left: 0; }
