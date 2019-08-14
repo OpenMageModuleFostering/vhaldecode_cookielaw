@@ -1,13 +1,13 @@
 {
     "name": "OpenMageModuleFostering/Vhaldecode_CookieLaw",
     "type": "magento-module",
-    "license": "OSL-v3.0",
+    "license": "MIT",
     "homepage": "",
-    "description": "Make sure your website complies with the EU Cookie Law with this customizable extension.",
+    "description": "With EU Cookie Law Compliance  your website complies with the EU Cookie Law. Elegant and responsive.",
     "authors": [
     {
-        "name": "Pere Garcia",
-        "email": "vhalde@mailhaven.com"
+        "name": "Valdecode",
+        "email": "info@valdecode.com"
     }
 ],
     "suggest": {

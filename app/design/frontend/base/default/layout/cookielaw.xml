@@ -1,33 +1,34 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Valdecode
+ * Valdecode - Cookie Law Compliance
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the Open Software License (OSL 3.0)
+ * This source file is subject to the The MIT License (MIT)
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
+ * http://www.valdecode.com/license/cookielaw/license.txt
  *
  * @category    Valdecode
  * @package     Valdecode_CookieLaw
  * @copyright   Copyright (c) 2014 Valdecode
- * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
  */
 -->
 <layout version="0.1.0">
     <default>
         <reference name="head">
-            <action method="addCss"><stylesheet>valdecode/cookielaw/css/cookielaw.css</stylesheet></action>
+            <action method="addCss">
+                <stylesheet>valdecode/cookielaw/css/cookielaw.css</stylesheet>
+            </action>
         </reference>
         <reference name="after_body_start">
-            <block name="cookielaw" type="core/template" before="-" template="cookielaw/widget.phtml"
-                   ifconfig="advanced/modules_disable_output/Valdecode_CookieLaw">
+            <block name="cookielaw" type="core/template" before="-" template="cookielaw/widget.phtml">
                 <action method="setCacheLifetime">
                     <lifetime>3600</lifetime>
                 </action>
-           </block>
+            </block>
         </reference>
     </default>
 </layout>

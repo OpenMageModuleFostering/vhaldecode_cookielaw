@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Valdecode
+ * Valdecode - Cookie Law Compliance
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the Open Software License (OSL 3.0)
+ * This source file is subject to the The MIT License (MIT)
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
+ * http://www.valdecode.com/license/cookielaw/license.txt
  *
  * @category    Valdecode
  * @package     Valdecode_CookieLaw
- * @copyright   Copyright (c) 2013 Valdecode
- * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @copyright   Copyright (c) 2014 Valdecode
+ * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
  */
 -->
 <config>
     <modules>
         <Valdecode_CookieLaw>
-            <version>1.0.0</version>
+            <version>1.1.9</version>
         </Valdecode_CookieLaw>
     </modules>
     <global>
@@ -49,15 +49,22 @@
         </layout>
         <translate>
             <modules>
-                <translations>
+                <cookielaw>
                     <files>
                         <default>Valdecode_CookieLaw.csv</default>
                     </files>
-                </translations>
+                </cookielaw>
             </modules>
         </translate>
     </frontend>
     <adminhtml>
+        <layout>
+            <updates>
+                <cookielaw>
+                    <file>cookielaw.xml</file>
+                </cookielaw>
+            </updates>
+        </layout>
         <acl>
             <resources>
                 <admin>
@@ -85,7 +92,7 @@
                 <bar_position>v-top</bar_position>
                 <box_position>v-bottom-right</box_position>
                 <skin>v-yellow-alert</skin>
-                <behaviour>1</behaviour>
+                <behaviour>365</behaviour>
                 <autohide>0</autohide>
             </general>
             <content>

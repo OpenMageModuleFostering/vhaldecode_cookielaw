@@ -1,5 +1,5 @@
-<?php
-
+<?xml version="1.0"?>
+<!--
 /**
  * Valdecode - Cookie Law Compliance
  *
@@ -15,13 +15,11 @@
  * @copyright   Copyright (c) 2014 Valdecode
  * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
  */
-class Valdecode_CookieLaw_Model_Config_Type
-{
-    public function toOptionArray()
-    {
-        return array(
-            array('value' => 'v-bar', 'label' => 'Bar'),
-            array('value' => 'v-box', 'label' => 'Box'),
-        );
-    }
-}
+-->
+<layout>
+    <adminhtml_system_config_edit>
+        <reference name="head">
+            <action method="addCss"><stylesheet>valdecode/cookielaw/css/cookielaw.css</stylesheet></action>
+        </reference>
+    </adminhtml_system_config_edit>
+</layout>
