@@ -11,16 +11,16 @@
  *
  * @category    Valdecode
  * @package     Valdecode_CookieLaw
- * @copyright   Copyright (c) 2013 Valdecode
+ * @copyright   Copyright (c) 2014 Valdecode
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-class Valdecode_CookieLaw_Model_Config_Show
+class Valdecode_CookieLaw_Model_Config_Bar_Position
 {
     public function toOptionArray()
     {
         return array(
-            array('value' => 'translate', 'label' => 'Message from translation files'),
-            array('value' => 'custom', 'label' => 'Custom message'),
+            array('value' => 'v-top', 'label' => 'Top'),
+            array('value' => 'v-bottom', 'label' => 'Bottom'),
         );
     }
 }

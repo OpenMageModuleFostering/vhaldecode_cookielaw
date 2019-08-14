@@ -12,7 +12,7 @@
  *
  * @category    Valdecode
  * @package     Valdecode_CookieLaw
- * @copyright   Copyright (c) 2013 Valdecode
+ * @copyright   Copyright (c) 2014 Valdecode
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 -->
@@ -20,10 +20,10 @@
     <default>
         <reference name="head">
             <action method="addCss"><stylesheet>valdecode/cookielaw/css/cookielaw.css</stylesheet></action>
-            <action method="addJs"><script>valdecode/cookielaw/cookielaw.js</script></action>
         </reference>
         <reference name="after_body_start">
-            <block name="cookielaw" type="core/template" before="-" template="cookielaw/top.phtml" />
+            <block name="cookielaw" type="core/template" before="-" template="cookielaw/widget.phtml"
+                   ifconfig="advanced/modules_disable_output/Valdecode_CookieLaw"/>
         </reference>
     </default>
 </layout>

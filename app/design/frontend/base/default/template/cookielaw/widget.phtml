@@ -1,0 +1,52 @@
+<?php
+/**
+ * Valdecode
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category    Valdecode
+ * @package     Valdecode_CookieLaw
+ * @copyright   Copyright (c) 2014 Valdecode
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+?>
+<?php /** @var $this Valdecode_CookieLaw_Model_Config_Skin */ ?>
+<?php $_helper = Mage::helper('cookielaw'); ?>
+<div id="v-cookielaw" class="<?php echo $_helper->getType(); ?> <?php echo $_helper->getSkin(); ?> <?php echo ($_helper->getType() == 'v-bar') ? $_helper->getBarPosition() : $_helper->getBoxPosition(); ?>" style="display: none">
+    <div class="v-message">
+        <?php echo ($_helper->getShow() == 'default') ? $this->__('This websites use cookies. By continuing to browse the site you are agreeing to our use of cookies.') : $_helper->getCustomMessage(); ?>
+    </div>
+    <div class="v-actions">
+        <a href="javascript:cookieLawAccept();" class="v-button v-accept">
+            <?php echo ($_helper->getShow() == 'default') ? $this->__("Accept") : $_helper->getCustomAccept(); ?>
+        </a>
+        <a href="<?php echo $_helper->getCmsPage(); ?>" class="v-button">
+            <?php echo ($_helper->getShow() == 'default') ? $this->__("More information") : $_helper->getCustomMoreInfo(); ?>
+        </a>
+    </div>
+</div>
+<script type="text/javascript">
+    function cookieLawAccept() {
+        var d = new Date();
+        if (<?php echo $_helper->getBehaviour(); ?>) d.setTime(d.getTime()+(365*24*60*60*1000)); // Remember 365 days
+        Mage.Cookies.set('cookielaw', '1', d);
+        if (typeof jQuery == 'undefined') {
+            document.getElementById('v-cookielaw').style.display = 'none';
+        } else {
+            jQuery('#v-cookielaw').slideUp();
+        }
+    }
+
+    if (!Mage.Cookies.get('cookielaw')) document.getElementById('v-cookielaw').style.display = '';
+
+    <?php if ($_helper->getAutohide()): ?>
+        setTimeout(function() {
+            cookieLawAccept();
+        }, <?php echo $_helper->getAutohide()*1000; ?>);
+    <?php endif; ?>
+</script>

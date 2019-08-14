@@ -14,13 +14,13 @@
  * @copyright   Copyright (c) 2014 Valdecode
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-class Valdecode_CookieLaw_Model_Config_Behaviour
+class Valdecode_CookieLaw_Model_Config_Type
 {
     public function toOptionArray()
     {
         return array(
-            array('value' => 1, 'label' => 'Never show again'),
-            array('value' => 0, 'label' => 'Hide for the rest of the session')
+            array('value' => 'v-bar', 'label' => 'Bar'),
+            array('value' => 'v-box', 'label' => 'Box'),
         );
     }
 }
