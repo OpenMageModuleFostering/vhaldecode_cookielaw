@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Vhaldecode
+ * Valdecode
  *
  * NOTICE OF LICENSE
  *
@@ -9,23 +9,28 @@
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category    Valdecode
+ * @package     Valdecode_CookieLaw
+ * @copyright   Copyright (c) 2013 Valdecode
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 -->
 <config>
     <modules>
-        <Vhaldecode_CookieLaw>
+        <Valdecode_CookieLaw>
             <version>1.0.0</version>
-        </Vhaldecode_CookieLaw>
+        </Valdecode_CookieLaw>
     </modules>
     <global>
         <helpers>
             <cookielaw>
-                <class>Vhaldecode_CookieLaw_Helper</class>
+                <class>Valdecode_CookieLaw_Helper</class>
             </cookielaw>
         </helpers>
         <models>
             <cookielaw>
-                <class>Vhaldecode_CookieLaw_Model</class>
+                <class>Valdecode_CookieLaw_Model</class>
             </cookielaw>
         </models>
     </global>
@@ -41,7 +46,7 @@
             <modules>
                 <translations>
                     <files>
-                        <default>Vhaldecode_CookieLaw.csv</default>
+                        <default>Valdecode_CookieLaw.csv</default>
                     </files>
                 </translations>
             </modules>

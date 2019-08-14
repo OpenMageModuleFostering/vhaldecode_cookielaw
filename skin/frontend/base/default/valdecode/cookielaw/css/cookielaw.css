@@ -1,5 +1,5 @@
 /**
- * Vhaldecode
+ * Valdecode
  *
  * NOTICE OF LICENSE
  *
@@ -7,6 +7,11 @@
  * that is bundled with this package in the file LICENSE_AFL.txt.
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/afl-3.0.php
+ *
+ * @category    Valdecode
+ * @package     Valdecode_CookieLaw
+ * @copyright   Copyright (c) 2013 Valdecode
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 #v-cookielaw { overflow: hidden; width: 100%; background: #fff; border-bottom: 1px solid #000; padding: 8px 0; position: relative; }
 #v-cookielaw .v-message { float: left; text-align: left; padding: 0 10px; width: 90%; }

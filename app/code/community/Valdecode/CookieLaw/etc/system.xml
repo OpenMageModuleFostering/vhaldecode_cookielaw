@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Vhaldecode
+ * Valdecode
  *
  * NOTICE OF LICENSE
  *
@@ -9,6 +9,11 @@
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category    Valdecode
+ * @package     Valdecode_CookieLaw
+ * @copyright   Copyright (c) 2013 Valdecode
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 -->
 <config>
@@ -25,7 +30,7 @@
                     <label>General</label>
                     <comment>
                         <![CDATA[
-                            Cookie Law Compliance is a <span style="color:#2c2c2c;font-weight:bold;">Vhaldecode</span>
+                            Cookie Law Compliance is a <span style="color:#2c2c2c;font-weight:bold;">Valdecode</span>
                             extension.<br/><span style="color:#888">We would like you to review this extension
                             at Magento Connect. If you feel that we do not deserve a 5 star review, please contact us right
                             away before leaving a neutral or negative review, so we can try to correct the problem.</span>
