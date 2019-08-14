@@ -16,7 +16,7 @@
  */
 ?>
 <?php $_helper = Mage::helper('cookielaw'); ?>
-<?php if (true || $_helper->isActive()): ?>
+<?php if ($_helper->isActive()): ?>
     <div id="v-cookielaw"
          class="<?php echo $_helper->getType(); ?> <?php echo $_helper->getSkin(); ?> <?php echo ($_helper->getType() == 'v-bar') ? $_helper->getBarPosition() : $_helper->getBoxPosition(); ?>"
          style="display: none">
