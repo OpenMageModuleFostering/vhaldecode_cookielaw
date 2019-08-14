@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Vhaldecode
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ */
+-->
+<config>
+    <modules>
+        <Vhaldecode_CookieLaw>
+            <version>1.0.0</version>
+        </Vhaldecode_CookieLaw>
+    </modules>
+    <global>
+        <helpers>
+            <cookielaw>
+                <class>Vhaldecode_CookieLaw_Helper</class>
+            </cookielaw>
+        </helpers>
+        <models>
+            <cookielaw>
+                <class>Vhaldecode_CookieLaw_Model</class>
+            </cookielaw>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <cookielaw>
+                    <file>cookielaw.xml</file>
+                </cookielaw>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <translations>
+                    <files>
+                        <default>Vhaldecode_CookieLaw.csv</default>
+                    </files>
+                </translations>
+            </modules>
+        </translate>
+    </frontend>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <cookielaw>
+                                            <title>Cookie Law Compliance</title>
+                                        </cookielaw>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <default>
+        <cookielaw>
+            <cookielaw>
+                <enabled>1</enabled>
+                <behaviour>1</behaviour>
+                <position>v-top</position>
+                <skin>v-yellow-alert</skin>
+                <cms_page>privacy-policy-cookie-restriction-mode</cms_page>
+            </cookielaw>
+        </cookielaw>
+    </default>
+</config>
