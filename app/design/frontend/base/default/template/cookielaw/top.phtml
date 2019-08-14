@@ -18,4 +18,9 @@
         </div>
         <a href="javascript:cookieLaw.cookieLawAccept(<?php echo Mage::getStoreConfig('cookielaw/cookielaw/behaviour') ?>);" class="v-close"><?php echo $this->__("Accept") ?></a>
     </div>
+    <script type="text/javascript">
+        if (!cookieLaw.getCookie('cookielaw')) {
+            document.getElementById('v-cookielaw').style.display = 'block';
+        }
+    </script>
 <?php endif; ?>

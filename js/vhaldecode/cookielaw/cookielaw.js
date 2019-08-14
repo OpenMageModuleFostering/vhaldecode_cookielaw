@@ -48,12 +48,3 @@ var cookieLaw = {
         }
     }
 }
-
-/**
- * This will make appear the notice if the cookie law has not been accepted.
- */
-window.onload = function(){
-    if (!cookieLaw.getCookie('cookielaw')) {
-        document.getElementById('v-cookielaw').style.display = 'block';
-    }
-}
