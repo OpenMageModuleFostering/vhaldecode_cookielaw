@@ -14,7 +14,7 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 #v-cookielaw { overflow: hidden; background: #fff; }
-#v-cookielaw .v-message { padding: 5px 10px; }
+#v-cookielaw .v-message { padding: 5px 10px; text-align: left; }
 #v-cookielaw .v-actions { }
 #v-cookielaw .v-button { color: #222; display: inline-block; background-color: #ececec; background-image: linear-gradient(#f4f4f4, #ececec); border: 1px solid #d4d4d4; padding: 4px 10px; text-decoration: none; text-shadow: 1px 1px 0 #fff; border-radius: 2px; }
 #v-cookielaw .v-button.v-accept:before { content: "\2714"; }

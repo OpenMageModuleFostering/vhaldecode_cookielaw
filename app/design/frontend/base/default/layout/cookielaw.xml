@@ -23,7 +23,11 @@
         </reference>
         <reference name="after_body_start">
             <block name="cookielaw" type="core/template" before="-" template="cookielaw/widget.phtml"
-                   ifconfig="advanced/modules_disable_output/Valdecode_CookieLaw"/>
+                   ifconfig="advanced/modules_disable_output/Valdecode_CookieLaw">
+                <action method="setCacheLifetime">
+                    <lifetime>3600</lifetime>
+                </action>
+           </block>
         </reference>
     </default>
 </layout>
