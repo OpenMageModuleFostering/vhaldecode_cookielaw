@@ -33,5 +33,5 @@
 
 @media screen and (max-width: 480px) {
     #v-cookielaw .v-message { float: none; width: 100%; }
-    #v-cookielaw .v-close { padding: 5px 10px; display: inline-block; font-size: inherit; background: none; position: relative; margin-top: inherit; top: inherit; right: inherit; width: 100%; }
+    #v-cookielaw .v-close { padding: 5px 10px; display: inline-block; font-size: inherit; background: none; position: relative; margin-top: inherit; top: inherit; right: inherit; width: 100%; text-align: left; }
 }
