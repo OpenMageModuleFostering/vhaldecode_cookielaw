@@ -1,27 +1,21 @@
 <?php
-
 /**
- * Valdecode - Cookie Law Compliance
+ * Valdecode
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the The MIT License (MIT)
+ * This source file is subject to the Open Software License (OSL 3.0)
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://www.valdecode.com/license/cookielaw/license.txt
+ * http://opensource.org/licenses/osl-3.0.php
  *
  * @category    Valdecode
  * @package     Valdecode_CookieLaw
  * @copyright   Copyright (c) 2014 Valdecode
- * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 class Valdecode_CookieLaw_Helper_Data extends Mage_Core_Helper_Abstract
 {
-    public function isActive()
-    {
-        return !Mage::getStoreConfig('advanced/modules_disable_output/Valdecode_CookieLaw');
-    }
-
     public function getType()
     {
         return Mage::getStoreConfig('cookielaw/general/type');
@@ -54,7 +48,7 @@ class Valdecode_CookieLaw_Helper_Data extends Mage_Core_Helper_Abstract
 
     public function getCmsPage()
     {
-        return Mage::getUrl(Mage::getStoreConfig('cookielaw/content/cms_page'));
+        return Mage::getStoreConfig('cookielaw/content/cms_page');
     }
 
     public function getShow()
