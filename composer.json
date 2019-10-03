@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Vhaldecode_CookieLaw",
+    "name": "OpenMageModuleFostering\/Vhaldecode_CookieLaw",
     "type": "magento-module",
     "license": "MIT",
     "homepage": "",
     "description": "With EU Cookie Law Compliance  your website complies with the EU Cookie Law. Elegant and responsive.",
     "authors": [
-    {
-        "name": "Valdecode",
-        "email": "info@valdecode.com"
-    }
-],
+        {
+            "name": "Valdecode",
+            "email": "info@valdecode.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
